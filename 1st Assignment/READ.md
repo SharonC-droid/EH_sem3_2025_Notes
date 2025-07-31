@@ -27,3 +27,44 @@ chmod 751 samplefile.txt
 # Step 3: View file permissions
 ls -l samplefile.txt
 
+# 🔍 Explanation of Octal File Permissions in Linux
+
+In Linux, file permissions determine who can **read**, **write**, or **execute** a file. These permissions are assigned to **three categories** of users:
+
+- **Owner**: The creator or assigned owner of the file.
+- **Group**: Other users in the file's group.
+- **Others**: All other users on the system.
+
+---
+
+## 🧮 Octal (Numeric) Notation
+
+Permissions are represented using octal (base-8) numbers. Each digit corresponds to a set of permissions for one category:
+
+| Permission Type | Symbol | Binary | Octal |
+|-----------------|--------|--------|-------|
+| Read            | `r`    | 100    | 4     |
+| Write           | `w`    | 010    | 2     |
+| Execute         | `x`    | 001    | 1     |
+
+The digits are **added** to get full permission:
+
+- `rwx` → 4 + 2 + 1 = **7**
+- `r-x` → 4 + 0 + 1 = **5**
+- `--x` → 0 + 0 + 1 = **1**
+
+---
+
+## 🔢 Example: `751` Permission Breakdown
+
+| User Type | Octal Value | Binary | Permissions | Symbol |
+|-----------|-------------|--------|-------------|--------|
+| Owner     | 7           | 111    | rwx         | ✅ Full access |
+| Group     | 5           | 101    | r-x         | ✅ Read and execute |
+| Others    | 1           | 001    | --x         | ✅ Execute only |
+
+The permission string shown by `ls -l` for a file with `751` would look like:
+
+```bash
+-rwxr-x--x
+
