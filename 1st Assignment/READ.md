@@ -27,6 +27,8 @@ chmod 751 samplefile.txt
 # Step 3: View file permissions
 ls -l samplefile.txt
 
+![image alt](https://github.com/SharonC-droid/EH_sem3_2025_Notes/blob/ab411092fd2d99eda35fc8536e4149b83458588c/Screenshot%202025-07-31%20224633.png)
+
 # 🔍 Explanation of Octal File Permissions in Linux
 
 In Linux, file permissions determine who can **read**, **write**, or **execute** a file. These permissions are assigned to **three categories** of users:
