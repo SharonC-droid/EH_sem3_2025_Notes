@@ -27,7 +27,7 @@ chmod 751 samplefile.txt
 # Step 3: View file permissions
 ls -l samplefile.txt
 
-![image alt](https://github.com/SharonC-droid/EH_sem3_2025_Notes/blob/ab411092fd2d99eda35fc8536e4149b83458588c/Screenshot%202025-07-31%20224633.png)
+![image alt](https://github.com/SharonC-droid/EH_sem3_2025_Notes/blob/main/Screenshot%202025-07-31%20224633.png?raw=true)
 
 # 🔍 Explanation of Octal File Permissions in Linux
 
